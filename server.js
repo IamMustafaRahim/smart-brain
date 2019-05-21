@@ -10,7 +10,7 @@ const db = knex({
   connection: {
     host: "127.0.0.1",
     user: "postgres",
-    password: "03371481340",
+    password: "",
     database: "smart-brain"
   }
 });
@@ -101,7 +101,7 @@ app.get("/profile/:id", (req, res) => {
 });
 
 const api = new Clarifai.App({
-  apiKey: "cfa091f6aaa84869818eb02066d991ee"
+  apiKey: "Your api key"
 });
 
 app.post("/imageurl", (req, res) => {
